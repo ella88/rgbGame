@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <link rel="stylesheet" href="colorGame.css">
+</head>
+
+
+
+
+<body>
+    <h1>The Graet
+        <br>
+        <span id="targetColor">RGB</span>
+        <br> color Game</h1>
+
+    <div id="control">
+        <span><button id="playbutton" onclick="assignColor()">New Colors</button></span>
+        <span id="message"></span>
+        <span><button id="easymode" onclick="easyMode()">Easy</button></span>
+        <span><button id="hardmode" onclick="hardMode()">Hard</button></span>
+    </div>
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <script src="colorGame.js"></script>
+
+
+</body>
+
+</html>

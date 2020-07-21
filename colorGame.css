@@ -1,0 +1,88 @@
+    body {
+        background-color: #232323;
+        margin: 0;
+        font-family: "Avenir", "Montserrat";
+    }
+    
+    h1 {
+        line-height: 1.1;
+        /* different line spacing set as 1.1*/
+        font-weight: normal;
+        /* h1 font weight is bold, make it normal */
+        background-color: steelblue;
+        margin: 0;
+        /*no marging all around*/
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20PX 0;
+    }
+    
+    .square {
+        /*set as 30% of the whole container*/
+        width: 30%;
+        background-color: yellow;
+        padding-bottom: 30%;
+        margin: 1.66%;
+        /*like image make it float to the left instead of stacking */
+        float: left;
+        border-radius: 15%;
+        transition: background-color 0.5s;
+        /* add a transition, takes 0.5s to change background-color to another state*/
+        -webkit-transition: background-color 0.5s;
+        -moz-transition: background-color 0.5s;
+        /* to make different browser compatible, add these two */
+    }
+    
+    #container {
+        /*put it in the center*/
+        margin: 20px auto;
+        max-width: 600px;
+    }
+    
+    #control {
+        background: white;
+        text-align: center;
+        color: black;
+    }
+    
+    #targetColor {
+        font-size: 200%;
+    }
+    
+    button {
+        border: none;
+        background: none;
+        /*remove the default button border and background*/
+        text-transform: uppercase;
+        height: 100%;
+        /* take the whole body space*/
+        font-weight: 700;
+        color: steelblue;
+        letter-spacing: 1px;
+        font-size: inherit;
+        /* inherit font size from the body*/
+        transition: all 0.3s;
+        /* add a transition, takes 3s to change all properties to another state*/
+        outline: none;
+        /*remove the outline of button*/
+    }
+    
+    #message {
+        display: inline-block;
+        width: 20%;
+        /* the message take up 20% of the screen even without any text there */
+        height: 100%;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    
+    button:hover {
+        background: steelblue;
+        color: white;
+    }
+    
+    .selected {
+        background: steelblue;
+        color: white;
+    }
